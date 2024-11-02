@@ -63,12 +63,12 @@ const Navbar = ({ onSelectCategory, onSearch }) => {
   }, [theme]);
 
   const categories = [
-    "School",
-    "Hospitals",
-    "College",
-    "Office",
-    "Home",
-    "Other",
+    "Mobile",
+    "Clothes",
+    "Laptop",
+    "Computers",
+    "Television",
+    "Automobile ",
   ];
   return (
     <>

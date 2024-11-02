@@ -3,12 +3,12 @@ import axios from "axios";
 
 const AddProduct = () => {
   const [product, setProduct] = useState({
-    name: "",
-    Contact: "",
+    Name: "",
+    Brand: "",
     description: "",
-    // price: "",
+    price: "",
     category: "",
-    // stockQuantity: "",
+    stockQuantity: "",
     releaseDate: "",
     productAvailable: false,
   });
@@ -68,16 +68,16 @@ const AddProduct = () => {
         </div>
         <div className="col-md-6">
           <label className="form-label">
-            <h6>Contact</h6>
+            <h6>Brand</h6>
           </label>
           <input
             type="text"
-            name="Contact"
+            name="Brand"
             className="form-control"
-            placeholder="Enter your Contact"
-            value={product.Contact}
+            placeholder="Enter your Brand"
+            value={product.Brand}
             onChange={handleInputChange}
-            id="Contact"
+            id="Brand"
           />
         </div>
         <div className="col-12">
@@ -94,7 +94,7 @@ const AddProduct = () => {
             id="description"
           />
         </div>
-        {/* <div className="col-5">
+        <div className="col-5">
           <label className="form-label">
             <h6>Price</h6>
           </label>
@@ -107,7 +107,7 @@ const AddProduct = () => {
             name="price"
             id="price"
           />
-        </div> */}
+        </div> 
      
            <div className="col-md-6">
           <label className="form-label">
@@ -121,16 +121,16 @@ const AddProduct = () => {
             id="category"
           >
             <option value="">Select category</option>
-            <option value="School">School</option>
-            <option value="Hospitals">Hospitals</option>
-            <option value="College">College</option>
-            <option value="Office">Office</option>
-            <option value="Home">Home</option>
-            <option value="Other">Other</option>
+            <option value="Mobile">Mobile</option>
+            <option value="Clothes">Clothes</option>
+            <option value="Laptop">Laptop</option>
+            <option value="Computer">Computer</option>
+            <option value="Television">Television</option>
+            <option value="Automobile">Automobile</option>
           </select>
         </div>
 
-        {/* <div className="col-md-4">
+         <div className="col-md-4">
           <label className="form-label">
             <h6>Stock Quantity</h6>
           </label>
@@ -144,7 +144,7 @@ const AddProduct = () => {
             // value={`${stockAlert}/${stockQuantity}`}
             id="stockQuantity"
           />
-        </div> */}
+        </div> 
         <div className="col-md-4">
           <label className="form-label">
             <h6>Release Date</h6>
